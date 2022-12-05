@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Mobiversite Challenge</string>
+    <string name="noun">Noun</string>
+    <string name="verb">Verb</string>
+    <string name="adjective">Adjective</string>
+    <string name="synonym">Synonym</string>
+    <string name="recent_search">Recent Search</string>
+    <string name="Search">Search</string>
+
+
+
+
+</resources>

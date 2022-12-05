@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.google.android.material.card.MaterialCardView
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:strokeWidth="2dp"
+    app:strokeColor="@color/soft_white">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:paddingBottom="20dp">
+
+        <TextView
+            android:id="@+id/positionTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="1-" />
+
+        <TextView
+            android:id="@+id/headerTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:textColor="@color/blue_text_color"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="@+id/positionTv"
+            app:layout_constraintStart_toEndOf="@+id/positionTv"
+            app:layout_constraintTop_toTopOf="@+id/positionTv"
+            tools:text="Noun" />
+
+
+        <TextView
+            android:id="@+id/bodyTv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textSize="14sp"
+            android:textColor="@color/night_text_color"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/positionTv"
+            app:layout_constraintTop_toBottomOf="@+id/headerTv"
+            tools:text="One’s native land; the place or country in which one dwells; the place where one’s ancestors dwell or dwelt." />
+
+
+        <LinearLayout
+            android:id="@+id/exampleContainer"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/bodyTv"
+            app:layout_constraintTop_toBottomOf="@+id/bodyTv">
+
+            <TextView
+                android:id="@+id/exampleHeaderTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:layout_marginBottom="4dp"
+                android:textColor="@color/night_text_color"
+                android:text="Example" />
+
+            <TextView
+                android:id="@+id/exampleTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/secondary_text_color"
+                tools:text="the home end, home advantage, home supporters"/>
+
+        </LinearLayout>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>
+
